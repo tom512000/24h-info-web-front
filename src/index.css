@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+
+.history-section {
+  padding: 100px 20px;
+} 
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: transform, opacity;
+}
+
+.timeline-item.is-reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.is-reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@keyframes pulse-fast {
+
+  0%,
+  100% {
+    opacity: 0.05;
+  }
+
+  45% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  55% {
+    opacity: 0.3;
+  }
+}
+
+.animate-pulse-fast {
+  animation: pulse-fast 3s infinite ease-in-out;
+}
