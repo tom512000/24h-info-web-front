@@ -1,27 +1,24 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import History from './pages/History';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div>
-      <nav className="bg-gray-800 text-white p-4 flex space-x-4">
-        <Link to="/" className="hover:underline">Accueil</Link>
-        <Link to="/about" className="hover:underline">À propos</Link>
-        <Link to="/history" className="hover:underline">Histoire</Link>
-      </nav>
-
-      <main className="mt-6">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/history" element={<History />} />
-          {/* ajoute d’autres routes ici */}
-        </Routes>
-      </main>
-    </div>
+    <>
+      <div className="w-full flex justify-center p-2 bg-[#0E100F]">
+        <Header />
+      </div>
+      <div className="w-full h-full flex justify-center p-2 bg-[#0E100F]">
+        <main className="max-w-[2280px] w-full">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+      </div>
+    </>
   );
 }
 
-export default App
+export default App;
