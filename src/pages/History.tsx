@@ -56,7 +56,7 @@ export default function History() {
           data-scroll
           data-scroll-speed="-2"
         />
-        <h1 className="text-4xl font-accurastic text-cyan-400 mb-16 text-center drop-shadow-[0_0_10px_cyan]">
+        <h1 className="text-4xl text-cyan-400 mb-16 text-center drop-shadow-[0_0_10px_cyan]">
           Histoire de la Fête des Lumières
         </h1>
         <div className="timeline relative flex flex-col gap-32 border-l-4 border-purple-500/30 sm:border-l-0 sm:border-r-0 sm:before:absolute sm:before:left-1/2 sm:before:top-0 sm:before:bottom-0 sm:before:w-1 sm:before:bg-purple-500/40 pl-6 sm:pl-0 sm:before:translate-x-[-0.5px]">
