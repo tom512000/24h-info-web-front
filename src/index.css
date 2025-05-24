@@ -41,27 +41,3 @@
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
-
-@keyframes pulse-fast {
-
-  0%,
-  100% {
-    opacity: 0.05;
-  }
-
-  45% {
-    opacity: 0.3;
-  }
-
-  50% {
-    opacity: 0.7;
-  }
-
-  55% {
-    opacity: 0.3;
-  }
-}
-
-.animate-pulse-fast {
-  animation: pulse-fast 3s infinite ease-in-out;
-}

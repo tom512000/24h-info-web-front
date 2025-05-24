@@ -63,7 +63,7 @@ export default function History() {
 
               <div className={`sm:w-[45%] ${isLeft ? "text-right sm:pr-6" : "text-left sm:pl-6"}`}>
                 <h2 className="text-3xl font-extrabold text-cyan-300 drop-shadow-[0_0_10px_cyan] mb-2">{item.year}</h2>
-                <p className="text-lg text-purple-100 leading-relaxed">{item.text}</p>
+                <p className="text-lg text-purple-100 leading-relaxed font-outfit">{item.text}</p>
               </div>
             </div>
           );
