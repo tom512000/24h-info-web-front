@@ -7,7 +7,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                outfit: ['Outfit', 'sans-serif'],
+                nowaltlight : ['NowAlt-Light', 'sans-serif'],
             },
         },
     },
