@@ -23,9 +23,9 @@ const Header = () => {
 
       <div className="mx-4">
         <img
-          src="/logo.png"
+          src="/images/logo.png"
           alt="Lyon 2025 Logo"
-          className="h-12 w-auto drop-shadow-[0_0_10px_cyan]"
+          className="h-12 w-auto drop-shadow-[0_0_10px_cyan] scale-150 rounded-3xl hover:scale-110 transition-transform duration-300"
         />
       </div>
 
