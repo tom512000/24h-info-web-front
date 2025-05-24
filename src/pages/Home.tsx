@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
+import Footer from './Footer';
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -100,6 +101,8 @@ export default function Home() {
           Entre chaque reflet, un rêve. Sous chaque lueur, une histoire.
         </p>
       </section>
+
+      <Footer />
     </div>
   );
 }

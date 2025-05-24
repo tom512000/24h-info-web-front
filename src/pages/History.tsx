@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
+import Footer from './Footer';
 
 export default function History() {
   const containerRef = useRef(null);
@@ -75,7 +76,7 @@ export default function History() {
               <div className={`absolute top-2 w-6 h-6 bg-fuchsia-500 rounded-full shadow-[0_0_15px_#a855f7] ${isLeft ? "-right-3" : "-left-3"}`} />
 
               <div className={`sm:w-[45%] ${isLeft ? "text-right sm:pr-6" : "text-left sm:pl-6"}`}>
-                <h2 className="text-3xl font-extrabold text-cyan-300 drop-shadow-[0_0_10px_cyan] mb-2">{item.year}</h2>
+                <h2 className="text-3xl font-extrabold text-cyan-300 drop-shadow-[0_0_10px_cyan] mb-2 ml-[5%] mr-[5%]">{item.year}</h2>
                 <p className="text-2xl text-purple-100 leading-relaxed font-nowaltlight">{item.text}</p>
               </div>
             </div>
@@ -90,6 +91,8 @@ export default function History() {
           Depuis le XIXe siècle, Lyon brille par son innovation et sa culture. La Fête des Lumières est l’un de ses joyaux les plus emblématiques, alliant histoire, art et lumière.
         </p>
       </section>
+
+      <Footer />
     </div>
   );
 }
