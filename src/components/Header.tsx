@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const menuItems = [
     { to: '/', label: 'Accueil' },
-    { to: '/about', label: 'À propos' },
     { to: '/history', label: 'Histoire' },
   ];
 
