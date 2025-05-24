@@ -21,7 +21,9 @@ export default function Events() {
       smooth: true,
       multiplier: 0.8,
     });
-    return () => scroll.destroy();
+    return () => {
+      scroll.destroy();
+    };
   }, []);
 
   const events: EventItem[] = [

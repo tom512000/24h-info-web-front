@@ -12,7 +12,9 @@ export default function Home() {
       el: containerRef.current,
       smooth: true,
     });
-    return () => scroll.destroy();
+    return () => {
+      scroll.destroy();
+    };
   }, []);
 
   const images = [
@@ -26,7 +28,10 @@ export default function Home() {
       ref={containerRef}
       className="min-h-screen bg-black text-white overflow-hidden font-outfit relative"
     >
-      <section data-scroll-section className="h-screen flex items-center justify-center relative">
+      <section
+        data-scroll-section
+        className="h-screen flex items-center justify-center relative"
+      >
         <h1
           data-scroll
           data-scroll-speed="2"
@@ -65,8 +70,8 @@ export default function Home() {
             className="text-4xl md:text-6xl max-w-2xl leading-snug text-center md:text-left text-cyan-200 drop-shadow-[0_0_10px_#22d3ee]"
           >
             {i % 2 === 0
-              ? "Les rues dansent sous des milliers de lueurs."
-              : "Une toile de lumières peinte par le silence."}
+              ? 'Les rues dansent sous des milliers de lueurs.'
+              : 'Une toile de lumières peinte par le silence.'}
           </p>
 
           <div
@@ -76,7 +81,11 @@ export default function Home() {
           />
           <div
             className="absolute w-40 h-40 border-2 border-cyan-400 rounded-full animate-spin-slow opacity-10"
-            style={{ top: '40%', left: '50%', transform: 'translate(-50%, -50%)' }}
+            style={{
+              top: '40%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+            }}
             data-scroll
             data-scroll-speed="-1"
           />
@@ -88,7 +97,9 @@ export default function Home() {
         className="py-60 px-8 text-center bg-black text-cyan-400 text-5xl md:text-7xl font-bold drop-shadow-[0_0_25px_cyan]"
       >
         Et toi, jusqu'où suivras-tu la lumière ?
-        <p className="mt-8 text-lg md:text-2xl text-purple-200 drop-shadow-[0_0_10px_purple]">Entre chaque reflet, un rêve. Sous chaque lueur, une histoire.</p>
+        <p className="mt-8 text-lg md:text-2xl text-purple-200 drop-shadow-[0_0_10px_purple]">
+          Entre chaque reflet, un rêve. Sous chaque lueur, une histoire.
+        </p>
       </section>
 
       <Footer />
