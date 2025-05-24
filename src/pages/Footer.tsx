@@ -29,11 +29,11 @@ const Footer = () => {
         <p className="mb-6">
           Accès facile en train, tram ou à pied. Le centre-ville devient un parcours immersif de lumière et d’émotions.
         </p>
-        <p className="italic text-purple-300 mb-8">
+        <p className="italic text-purple-300">
           “Quand la nuit tombe, Lyon s’illumine comme un rêve éveillé.”
         </p>
 
-        <nav className="flex flex-wrap justify-center gap-6 text-lg mb-24">
+        <nav className="flex flex-wrap justify-center gap-6 text-lg mb-16">
           <Link to="/" className="text-fuchsia-400 hover:underline">
             Accueil
           </Link>
@@ -44,6 +44,33 @@ const Footer = () => {
             Évènements
           </Link>
         </nav>
+
+        <div className="flex justify-center gap-8 text-2xl mb-24">
+          <a
+            href="https://www.instagram.com/fetedeslumieres/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-fuchsia-400 hover:text-white transition-colors duration-300"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/fetedeslumieres"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-fuchsia-400 hover:text-white transition-colors duration-300"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.tiktok.com/@villedelyon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-fuchsia-400 hover:text-white transition-colors duration-300"
+          >
+            TikTok
+          </a>
+        </div>
       </div>
 
       <div className="absolute w-32 h-32 bg-fuchsia-500 rounded-full blur-3xl opacity-20 bottom-10 left-10 pointer-events-none" data-scroll data-scroll-speed="-2" />
