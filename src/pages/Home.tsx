@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
+import Footer from './Footer';
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -89,6 +90,8 @@ export default function Home() {
         Et toi, jusqu'où suivras-tu la lumière ?
         <p className="mt-8 text-lg md:text-2xl text-purple-200 drop-shadow-[0_0_10px_purple]">Entre chaque reflet, un rêve. Sous chaque lueur, une histoire.</p>
       </section>
+
+      <Footer />
     </div>
   );
 }
